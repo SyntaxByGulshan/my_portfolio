@@ -54,7 +54,8 @@
   </header>
 
   <!-- About  Section -->
-  <section id="about" class="w-full flex flex-col md:flex-row items-center justify-center md:py-56  pt-24 pb-12 px-12 lg:gap-x-24 gap-y-10 bg-[url('../public/element.png')] bg-no-repeat bg-cover">
+  <section id="about" class="w-full flex flex-col md:flex-row items-center justify-center md:py-56  pt-24 pb-12 px-12 lg:gap-x-24 gap-y-10 
+  bg-[url('../public/element.png')] bg-no-repeat bg-cover">
     
     <div class="mb-6 md:mb-0 md:order-2">
       <div class= "z-0 lg:h-64 lg:w-64  lg:bg-gray-800 lg:relative rounded shadow-2xl shadow-gray-200 hover:shadow-teal-400  transition  duration-1000  ">
@@ -64,14 +65,14 @@
     <div class="md:order-1 md:pr-10 text-center md:text-start">
       <h1 class="text-3xl md:text-4xl font-bold mb-3">Hi, I’m Gulshan Kumar </h1>
       <h2 class="text-xl md:text-2xl text-teal-400 mb-4">
-  Full Stack Developer | MERN Enthusiast
-</h2>
+      Full Stack Developer | MERN Enthusiast
+        </h2>
       <p class="text-gray-400 max-w-lg">
         A motivated full-stack Developer with strong experience in building modern responsive web applications...
       </p>
       <div class=" flex gap-4 mt-6 justify-center md:justify-start">
         <a  href="https://www.instagram.com/" target="_blank" >
-        <img class="h-8 w-8 bg-white rounded shadow-md shadow-gray-200  hover:shadow-teal-400  hover:shadow-lg transition  duration-1000 "
+        <img class="h-8 w-8 bg-white rounded shadow-md shadow-gray-200  hover:shadow-teal-400  hover:shadow-lg  transition  duration-1000 "
          src="../public/instalogo.png"  alt="">
         </a>
         <a href="https://github.com/SyntaxByGulshan" target="_blank">
@@ -245,14 +246,16 @@
     <div class=" flex flex-col sm:flex-row p-6 justify-center gap-6">
       <!-- Phone -->
       <div class="bg-gray-900 flex-1/2 p-6 rounded-2xl flex flex-col items-center ">
-        <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200" src="../public/phone-call.png" alt="">
+        <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200 hover:bg-teal-400 hover:shadow-teal-400 
+        transition duration-1000 " src="../public/phone-call.png" alt="">
         <h3 class="text-lg font-semibold mb-2">  Phone</h3>
         <p class="text-gray-300">+91 8863872607</p>
       </div>
 
       <!-- Email -->
       <div class="bg-gray-900 flex-1/2 p-6 rounded-2xl flex flex-col items-center ">
-         <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200" src="../public/mail.png" alt="">
+         <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200 hover:bg-teal-400 hover:shadow-teal-400 
+         transition duration-1000" src="../public/mail.png" alt="">
         <h3 class="text-lg font-semibold mb-2"> Email</h3>
         <p class="text-gray-300">gul19june@gmail.com</p>
       </div>
@@ -264,14 +267,14 @@
       <form class="" onsubmit={handleSubmit(event)}>
         
           <div class="mb-4">
-            <input type="text" oninput={handleNameInput(event)} placeholder="Your Name" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <input type="text"  oninput={handleNameInput(event)} placeholder="Your Name" class=" w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
            <span class=" p-2 text-red-600" id="errorname"></span>
           </div>
         <div class="mb-4">
-          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
         <span class=" p-2 text-red-600" id="erroremail"></span>
         </div>
-        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white"></textarea>
 
         <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg transition">
           Send Message

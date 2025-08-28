@@ -20,7 +20,7 @@ const handleNameInput = (event) => {
 const handleEmailInput = (event) => {
   const email=event.target.value.trim();
   if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    document.getElementById('erroremail').innerHTML="Please enter your email"
+    document.getElementById('erroremail').innerHTML="Please enter your email correctly"
     console.log('email');
     return;
   }
@@ -37,7 +37,7 @@ const handleSubmit = (event) => {
     return;
   }
   if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    document.getElementById('erroremail').innerHTML="Please enter your email"
+    document.getElementById('erroremail').innerHTML="Please enter your email correctly"
     console.log('email');
     return;
   }

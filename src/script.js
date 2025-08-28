@@ -7,7 +7,6 @@ function show(){
     const s=nav.classList.toggle('hidden');
     console.log(s);
 }
-
 const handleNameInput = (event) => {
   const name=event.target.value.trim();
   console.log(name.length);
@@ -18,8 +17,6 @@ const handleNameInput = (event) => {
   }
   document.getElementById('errorname').innerHTML=""
 }
-
-
 const handleSubmit = (event) => {
   event.preventDefault();
    const name=event.target.elements[0].value.trim();

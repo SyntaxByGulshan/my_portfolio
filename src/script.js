@@ -17,6 +17,15 @@ const handleNameInput = (event) => {
   }
   document.getElementById('errorname').innerHTML=""
 }
+const handleEmailInput = (event) => {
+  const email=event.target.value.trim();
+  if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    document.getElementById('erroremail').innerHTML="Please enter your email"
+    console.log('email');
+    return;
+  }
+  document.getElementById('erroremail').innerHTML=""
+}
 const handleSubmit = (event) => {
   event.preventDefault();
    const name=event.target.elements[0].value.trim();
@@ -27,7 +36,7 @@ const handleSubmit = (event) => {
     console.log(name.length);
     return;
   }
-  if(email.trim() == ''){
+  if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
     document.getElementById('erroremail').innerHTML="Please enter your email"
     console.log('email');
     return;
@@ -39,6 +48,9 @@ const handleSubmit = (event) => {
   }
   console.log(data);
   localStorage.setItem('contact',JSON.stringify(data));
+  document.getElementById('success').innerHTML="Message sent successfully"
   event.target.reset();
-
+  setTimeout(() => {
+    document.getElementById('success').innerHTML=""
+  }, 3000);
 }

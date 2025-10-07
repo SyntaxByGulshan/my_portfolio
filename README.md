@@ -3,6 +3,8 @@ Personal Portfolio Website
 This is my personal portfolio website built using HTML, CSS, and JavaScript.
 It showcases my skills, projects, experience, and contact information in a clean and responsive design.
 
+
+
 📌 Features
 
 🎨 Responsive Design – Works on desktop, tablet, and mobile.
@@ -16,6 +18,9 @@ It showcases my skills, projects, experience, and contact information in a clean
 📬 Contact Section – Easy way to reach me.
 
 ✨ Smooth animations and transitions for better user experience.
+
+
+
 
 🛠️ Technologies Used
 

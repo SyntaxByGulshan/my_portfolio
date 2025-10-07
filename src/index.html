@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gulshan-Portfolio</title>
+  <title>Gulshan_Portfolio</title>
   <link rel="stylesheet" href="./output.css">
-  
 </head>
-<body class="bg-gray-900 text-gray-200 flex justify-center overflow-x-hidden">
-<div class="w-full max-w-[2560px]">
+<body class="bg-gray-900 text-gray-200  overflow-x-hidden">
+<div class="w-full lg:max-w-[1920px] mx-auto">
   <!-- Navbar -->
   <header class=" fixed w-full z-10">
-    <nav class="max-w-[2560px]">
+    <nav class="max-w-[1920px]">
      <div class="w-full flex h-16 items-center justify-between  px-6  md:px-18 py-4 bg-gray-700">
      <div class="text-xl font-bold"><a href="#hero">&ltGK/&gt</a></div>
-    <div id="show" class="md:hidden  text-gray-300 text-2xl cursor-pointer" onclick={show()}><img class="h-6 w-6" src="../public/toggleButton.png" alt=""></div>
-     <div id="hide" class="md:hidden hidden  text-white text-2xl cursor-pointer" onclick={show()}>X</div>
+    <div id="show" class="md:hidden  text-gray-300 text-2xl cursor-pointer" onclick='show()'><img class="h-6 w-6" src="../public/toggleButton.png" alt=""></div>
+     <div id="hide" class="md:hidden hidden  text-white text-2xl cursor-pointer" onclick='show()'>X</div>
     <ul class="hidden md:flex gap-8 text-gray-300">
       <li><a href="#my_jurney" class="hover:text-white">
         My Journey
@@ -24,33 +23,31 @@
       <li><a href="#projects" class="hover:text-white">Projects</a></li>
       <li><a href="#contact" class="hover:text-white">Contact</a></li>
     </ul>
-    <a href="../public/Gulshan02.pdf" download="Gulshan02.pdf" class="hidden md:flex bg-teal-500 px-4 py-2 rounded-lg text-white font-medium hover:bg-teal-600">Download CV</a>
+    <a href="../public/Gulshan02.pdf" download="gulshan.pdf" class="hidden md:flex bg-teal-500 px-4 py-2 rounded-lg text-white font-medium hover:bg-teal-600">Download CV</a>
    </div>
    <!-- this nav for small size screen -->
-     <ul id="options" class="z-20 md:hidden hidden top-18 py-4 space-y-3 text-gray-300 bg-gray-900/90 w-full text-center" >
-      <li onclick={show()}>
+     <ul id="options" class="z-10 md:hidden hidden  py-4 space-y-3 text-gray-300 bg-gray-900/90 w-full text-center" >
+      <li onclick='show()'>
         <a href="#my_jurney" class="hover:text-white">
         My Journey
       </a>
       </li>
-      <li onclick={show()}>
+      <li onclick='show()'>
         <a href="#skills" class="hover:text-white">
           Skills
         </a>
       </li>
-      <li onclick={show()}>
+      <li onclick='show()'>
         <a href="#projects" class="hover:text-white">
           Projects</a>
         </li>
-      <li onclick={show()}>
+      <li onclick='show()'>
         <a href="#contact" class="hover:text-white">Contact</a>
       </li>
       <li>
          <a href="../public/Gulshan02.pdf" download="Gulshan02.pdf" class=" bg-teal-500 px-4 py-2 rounded-lg text-white font-medium hover:bg-teal-600">Download CV</a>
-  
       </li>
     </ul>
-   
   </nav>
   </header>
 
@@ -59,12 +56,12 @@
   bg-[url('../public/element.png')] bg-no-repeat bg-cover">
     
     <div class="mb-6 md:mb-0 md:order-2">
-      <div class= "z-0 lg:h-64 lg:w-64  lg:bg-gray-800 lg:relative rounded shadow-2xl shadow-gray-200 hover:shadow-teal-400  transition  duration-1000  ">
-        <img class="z-10 h-64 max-w-64 rounded lg:absolute lg:right-6 lg:-top-6 lg:hover:translate-5   duration-1000" src="../public/IMG-20250630-WA0082.jpg" alt="Profile"  />
+      <div class= " lg:h-64 lg:w-64  lg:bg-gray-800 lg:relative rounded shadow-2xl shadow-gray-200 hover:shadow-teal-400   duration-1000  ">
+        <img class=" h-64 max-w-64 rounded lg:absolute lg:right-6 lg:-top-6 lg:hover:translate-5   duration-1000" src="../public/IMG-20250630-WA0082.jpg" alt="Profile"  />
       </div>
     </div>
-    <div class="md:order-1 md:pr-10 text-center md:text-start">
-      <h1 class="text-3xl md:text-4xl font-bold mb-3">Hi, I’m Gulshan Kumar </h1>
+    <div class="md:pr-10 text-center md:text-start">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3">Hi, I'm Gulshan Kumar </h1>
       <h2 class="text-xl md:text-2xl text-teal-400 mb-4">
       Full Stack Developer | MERN Enthusiast
         </h2>
@@ -142,20 +139,12 @@
          </div>
       </div>
       <div class="bg-gray-900 p-14 px-20  rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-teal-400   duration-500">
-        <img class="h-20 w-20" src="../public/MongoDB.png" alt="">
-        <Span>MongoDB</Span>
-        <div class="w-full bg-gray-700 rounded-lg  h-2 mt-2">
-        <div class="bg-teal-400 h-2 rounded-lg  w-3/4"></div> 
-         </div>
-      </div>
-      <div class="bg-gray-900 p-14 px-20  rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-teal-400   duration-500">
         <img class="h-20 w-20" src="../public/git.png" alt="">
         <Span>Git</Span>
         <div class="w-full bg-gray-700 rounded-lg  h-2 mt-2">
           <div class="bg-teal-400 h-2 rounded-lg  w-9/10"></div> 
          </div>
       </div>
-
     </div>
   </section>
 
@@ -201,9 +190,8 @@
     <h2 class="text-3xl font-bold mb-12 ">My Journey</h2>
 
   <div class="relative border-l border-gray-600 ml-4">
-
     <!-- Matriculation -->
-    <div class="mb-10 ml-6">
+     <div class="mb-10 ml-6">
       <span class="absolute -left-2 flex items-center justify-center w-4 h-4   bg-gray-400 rounded-full shadow-lg shadow-gray-200"></span>
       <h3 class="text-xl font-semibold">Matriculation (2019)</h3>
       <p class="text-gray-300">Vidya Jyoti School ,Bhatu bigha ,Nalanda</p>
@@ -225,6 +213,7 @@
       <p class="text-gray-300">Haldia Institute of Technology,Haldia ,WestBangal</p>
       <p class="text-sm text-gray-400">Skills: Programming, Web Development, Data Structures</p>
     </div>
+
     <!-- Internship -->
     <div class="ml-6">
       <span class="absolute -left-2 flex items-center justify-center w-4 h-4   bg-teal-400 rounded-full shadow-lg shadow-teal-200 "></span>
@@ -232,7 +221,6 @@
       <p class="text-gray-300">Capsitech ,Jodhpur,Rajsthan</p>
       <p class="text-sm text-gray-400">Skills: React, Tailwind, APIs, node</p>
     </div>
-
   </div>
   </div>
   </section> 
@@ -248,15 +236,15 @@
       <!-- Phone -->
       <div class="bg-gray-900 flex-1/2 p-6 rounded-2xl flex flex-col items-center space-y-2">
         <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200 hover:bg-teal-400 hover:shadow-teal-400 
-        transition duration-500 " src="../public/phone-call.png" alt="">
-        <h3 class="text-lg font-semibold ">  Phone</h3>
+         duration-500 " src="../public/phone-call.png" alt="">
+        <h3 class="text-lg font-semibold "> Phone</h3>
         <p class="text-gray-300 ">+91 8863872607</p>
       </div>
 
       <!-- Email -->
       <div class="bg-gray-900 flex-1/2 p-6 rounded-2xl flex flex-col items-center space-y-2">
          <img class="h-10 w-10 bg-white rounded-lg p-2 shadow-md shadow-gray-200 hover:bg-teal-400 hover:shadow-teal-400 
-         transition duration-500" src="../public/mail.png" alt="">
+          duration-500" src="../public/mail.png" alt="">
         <h3 class="text-lg font-semibold "> Email</h3>
         <p class="text-gray-300">gul19june@gmail.com</p>
       </div>
@@ -268,19 +256,19 @@
       <div class="flex justify-center">
       <span class=" mb-4  rounded-lg bg-teal-400 text-center " id="success"></span>
       </div>
-      <form class="" onsubmit={handleSubmit(event)}>
+      <form class="" onsubmit='handleSubmit(event)'>
            
           <div class="mb-4">
-            <input type="text"  oninput={handleNameInput(event)} placeholder="Your Name" class=" w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
+            <input type="text"  oninput='handleNameInput(event)' placeholder="Your Name" class=" w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
            <span class=" p-2 text-red-600" id="errorname"></span>
           </div>
         <div class="mb-4">
-          <input type="email" oninput={handleEmailInput(event)} placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
+          <input type="email" oninput='handleEmailInput(event)' placeholder="Your Email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white">
         <span class=" p-2 text-red-600" id="erroremail"></span>
         </div>
-        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white"></textarea>
+        <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white"></textarea>
 
-        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-lg ">
           Send Message
         </button>
       </form>
@@ -291,3 +279,4 @@
 <script src="./script.js"></script>
 </body>
 </html>
+

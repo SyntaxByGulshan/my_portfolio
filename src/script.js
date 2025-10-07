@@ -11,7 +11,7 @@ const handleNameInput = (event) => {
   const name=event.target.value.trim();
   console.log(name.length);
   if(name == '' || name.length<=3 ||name.length>20||!/^[a-zA-Z\s]*$/.test(name)){ 
-    document.getElementById('errorname').innerHTML="Please enter your name correctly"
+    document.getElementById('errorname').innerHTML="Please enter your name "
     console.log(name.length);
     return;
   }
@@ -19,8 +19,8 @@ const handleNameInput = (event) => {
 }
 const handleEmailInput = (event) => {
   const email=event.target.value.trim();
-  if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    document.getElementById('erroremail').innerHTML="Please enter your email correctly"
+  if(email.trim() == ''){
+    document.getElementById('erroremail').innerHTML="Please enter your email "
     console.log('email');
     return;
   }
@@ -36,8 +36,8 @@ const handleSubmit = (event) => {
     console.log(name.length);
     return;
   }
-  if(email.trim() == ''||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    document.getElementById('erroremail').innerHTML="Please enter your email correctly"
+  if(email.trim() == ''){
+    document.getElementById('erroremail').innerHTML="Please enter your email "
     console.log('email');
     return;
   }
